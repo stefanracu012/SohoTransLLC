@@ -2,8 +2,16 @@ import Link from 'next/link';
 import DriverApplyForm from '../components/DriverApplyForm';
 
 export const metadata = {
-  title: 'For Drivers | SoHo Trans LLS',
-  description: 'Join our team of professional CDL drivers. Competitive pay, modern equipment, excellent benefits, and a supportive work environment.',
+  title: 'CDL Driver Jobs',
+  description: 'Join SoHo Trans LLC as a CDL driver. Competitive pay up to $0.65/mile, modern equipment, full benefits, home time, and a supportive team environment. Apply now.',
+  keywords: ['CDL driver jobs', 'truck driver employment', 'OTR driver positions', 'company driver jobs', 'trucking careers', 'CDL-A jobs', 'long haul driver', 'regional driver jobs', 'driver benefits', 'trucking employment'],
+  alternates: { canonical: '/for-drivers' },
+  openGraph: {
+    title: 'CDL Driver Jobs | SoHo Trans LLC',
+    description: 'Competitive pay, modern equipment, full benefits. Join our team of professional CDL drivers.',
+    url: '/for-drivers',
+    type: 'website',
+  },
 };
 
 export default function ForDriversPage() {

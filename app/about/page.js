@@ -1,8 +1,16 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'About Us | SoHo Trans LLS',
-  description: 'Learn about SoHo Trans LLS - our history, mission, values, and commitment to excellence in the trucking industry.',
+  title: 'About Us',
+  description: 'Learn about SoHo Trans LLC — our history, mission, values, and commitment to excellence in the trucking and logistics industry. Nationwide freight services since day one.',
+  keywords: ['about SoHo Trans', 'trucking company history', 'logistics mission', 'freight company values', 'transportation company about'],
+  alternates: { canonical: '/about' },
+  openGraph: {
+    title: 'About SoHo Trans LLC',
+    description: 'Our history, mission, values, and commitment to excellence in trucking and logistics.',
+    url: '/about',
+    type: 'website',
+  },
 };
 
 export default function AboutPage() {
@@ -33,7 +41,7 @@ export default function AboutPage() {
               <span className="text-[#DC2626]">Forward.</span>
             </h1>
             <p className="text-xl text-gray-400 max-w-2xl leading-relaxed">
-              Built on trust, fueled by precision. SoHo Trans LLS has been
+              Built on trust, fueled by precision. SoHo Trans LLC has been
               setting the standard for freight excellence for over 15 years.
             </p>
           </div>
@@ -62,7 +70,7 @@ export default function AboutPage() {
               <div className="space-y-5 text-lg text-gray-500 leading-relaxed">
                 <p>
                   Founded in 2010 with a single truck and a relentless drive,
-                  SoHo Trans LLS was built on one promise — show up, every time.
+                  SoHo Trans LLC was built on one promise — show up, every time.
                   Our founder turned a passion for logistics into a company
                   that clients could genuinely count on.
                 </p>
@@ -291,7 +299,7 @@ export default function AboutPage() {
             Ready to ship with confidence?
           </h2>
           <p className="text-xl text-gray-500 mb-12 max-w-2xl mx-auto">
-            Join thousands of businesses that trust SoHo Trans LLS to deliver — on time, every time.
+            Join thousands of businesses that trust SoHo Trans LLC to deliver — on time, every time.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

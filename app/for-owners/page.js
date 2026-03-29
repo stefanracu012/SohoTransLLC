@@ -1,8 +1,16 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'For Owners | SoHo Trans LLS',
-  description: 'Partner with SoHo Trans LLS as an owner-operator. Consistent loads, competitive rates, quick pay, and dedicated support.',
+  title: 'Owner-Operator Programs',
+  description: 'Partner with SoHo Trans LLC as an owner-operator. Consistent freight, 90%+ load rate, weekly settlements, fuel discounts, and dedicated dispatch support.',
+  keywords: ['owner operator trucking', 'owner operator lease program', 'independent truck driver', 'owner operator freight', 'trucking partnership', 'owner operator pay', 'lease purchase trucking', 'dedicated dispatch', 'fuel card program', 'owner operator benefits'],
+  alternates: { canonical: '/for-owners' },
+  openGraph: {
+    title: 'Owner-Operator Programs | SoHo Trans LLC',
+    description: 'Consistent freight, competitive pay, weekly settlements, and dedicated support for owner-operators.',
+    url: '/for-owners',
+    type: 'website',
+  },
 };
 
 export default function ForOwnersPage() {

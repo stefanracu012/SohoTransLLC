@@ -2,8 +2,16 @@ import Link from 'next/link';
 import { blogPosts, getPaginatedPosts, getTotalPages, POSTS_PER_PAGE } from './posts';
 
 export const metadata = {
-  title: 'Blog | SoHo Trans LLS',
-  description: 'Stay updated with the latest news, tips, and insights from the trucking industry. Expert advice for drivers, owners, and shippers.',
+  title: 'Blog',
+  description: 'Trucking industry news, CDL driver tips, ELD compliance updates, owner-operator advice, and freight market insights from SoHo Trans LLC.',
+  keywords: ['trucking blog', 'CDL driver tips', 'trucking industry news', 'owner operator advice', 'ELD compliance', 'freight market insights', 'trucking regulations'],
+  alternates: { canonical: '/blog' },
+  openGraph: {
+    title: 'Blog | SoHo Trans LLC',
+    description: 'Trucking industry news, driver tips, compliance updates, and owner-operator advice.',
+    url: '/blog',
+    type: 'website',
+  },
 };
 
 export default async function BlogPage({ searchParams }) {

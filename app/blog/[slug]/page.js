@@ -9,10 +9,27 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }) {
   const { slug } = await params;
   const post = getPostBySlug(slug);
-  if (!post) return { title: 'Post Not Found | SoHo Trans LLS' };
+  if (!post) return { title: 'Post Not Found' };
   return {
-    title: `${post.title} | SoHo Trans LLS`,
+    title: post.title,
     description: post.excerpt,
+    keywords: [post.category, 'trucking blog', 'SoHo Trans LLC', 'trucking industry'],
+    alternates: { canonical: `/blog/${slug}` },
+    openGraph: {
+      title: `${post.title} | SoHo Trans LLC`,
+      description: post.excerpt,
+      url: `/blog/${slug}`,
+      type: 'article',
+      publishedTime: post.date,
+      authors: ['SoHo Trans LLC'],
+      images: post.image ? [{ url: post.image, width: 1200, height: 600, alt: post.title }] : [],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: post.title,
+      description: post.excerpt,
+      images: post.image ? [post.image] : [],
+    },
   };
 }
 
@@ -128,9 +145,9 @@ export default async function BlogPostPage({ params }) {
               {/* About Box */}
               <div className="bg-gradient-to-br from-[#1F2937] to-[#0F172A] rounded-2xl p-6 text-white">
                 <div className="mb-4">
-                  <img src="/Logo SohoTransLLC.png" alt="SoHo Trans LLS" className="h-20 w-auto object-contain" />
+                  <img src="/Logo SohoTransLLC.png" alt="SoHo Trans LLC" className="h-20 w-auto object-contain" />
                 </div>
-                <h3 className="font-bold text-lg mb-2">SoHo Trans LLS</h3>
+                <h3 className="font-bold text-lg mb-2">SoHo Trans LLC</h3>
                 <p className="text-gray-400 text-sm leading-relaxed mb-4">
                   Your trusted partner in trucking and logistics. Expert content for drivers, owners, and shippers.
                 </p>
