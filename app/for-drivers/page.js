@@ -239,10 +239,10 @@ export default function ForDriversPage() {
         ].map((truck, index) => (
           <div
             key={index}
-            className={`flex flex-col ${truck.imageLeft ? 'lg:flex-row' : 'lg:flex-row-reverse'} items-stretch h-screen`}
+            className={`flex flex-col ${truck.imageLeft ? 'lg:flex-row' : 'lg:flex-row-reverse'} items-stretch lg:h-screen`}
           >
             {/* Image — flush to edge, ~65% width */}
-            <div className="w-full lg:w-[65%] relative overflow-hidden h-1/2 lg:h-full">
+            <div className="w-full lg:w-[65%] relative overflow-hidden h-64 sm:h-80 lg:h-full">
               <img
                 src={truck.image}
                 alt={truck.title}
@@ -252,7 +252,7 @@ export default function ForDriversPage() {
             </div>
 
             {/* Text — remaining 35% */}
-            <div className="w-full lg:w-[35%] bg-[#1F2937] flex flex-col justify-center px-10 py-12">
+            <div className="w-full lg:w-[35%] bg-[#1F2937] flex flex-col justify-center px-8 py-10 lg:px-10 lg:py-12">
               <span className="text-[#DC2626] text-xs font-bold tracking-[0.2em] uppercase mb-3">
                 0{index + 1}
               </span>
