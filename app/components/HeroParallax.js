@@ -12,19 +12,11 @@ export default function HeroParallax() {
           loop
           muted
           playsInline
+          preload="auto"
           disablePictureInPicture
           controlsList="nodownload nofullscreen noremoteplayback"
           onContextMenu={(e) => e.preventDefault()}
-          style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            objectFit: 'cover',
-            objectPosition: 'center',
-            pointerEvents: 'none',
-          }}
+          className="absolute inset-0 w-full h-full object-cover pointer-events-none"
         >
           <source src="/video_2026-03-29_13-16-26.mp4" type="video/mp4" />
         </video>
