@@ -177,7 +177,7 @@ export default function Navbar() {
                   </svg>
                 </button>
                 {/* Dropdown */}
-                <div className={`absolute top-full right-0 pt-2 transition-all duration-200 ${phoneOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-1'}`}>
+                <div className={`absolute top-full right-0 pt-2 z-[999] transition-all duration-200 ${phoneOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-1'}`}>
                   <div className="bg-white rounded-xl shadow-xl border border-gray-100 py-1.5 min-w-[200px]">
                     <a href="tel:7042225288" className="flex items-center gap-3 px-4 py-2.5 text-gray-700 hover:bg-gray-50 transition-colors">
                       <svg className="w-4 h-4 text-[#DC2626]" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
