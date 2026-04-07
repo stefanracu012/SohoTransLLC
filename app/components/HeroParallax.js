@@ -7,6 +7,7 @@ export default function HeroParallax() {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Video */}
       <div className="absolute inset-0 z-0">
+        {/* Mobile Video */}
         <video
           autoPlay
           loop
@@ -16,7 +17,22 @@ export default function HeroParallax() {
           disablePictureInPicture
           controlsList="nodownload nofullscreen noremoteplayback"
           onContextMenu={(e) => e.preventDefault()}
-          className="absolute inset-0 w-full h-full object-cover pointer-events-none"
+          className="absolute inset-0 w-full h-full object-cover pointer-events-none block lg:hidden"
+        >
+          <source src="/IMG_1660.MOV" type="video/quicktime" />
+          <source src="/IMG_1660.MOV" type="video/mp4" />
+        </video>
+        {/* Desktop Video */}
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          preload="auto"
+          disablePictureInPicture
+          controlsList="nodownload nofullscreen noremoteplayback"
+          onContextMenu={(e) => e.preventDefault()}
+          className="absolute inset-0 w-full h-full object-cover pointer-events-none hidden lg:block"
         >
           <source src="/video_2026-03-29_13-16-26.mp4" type="video/mp4" />
         </video>
