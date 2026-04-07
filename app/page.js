@@ -302,7 +302,7 @@ export default function Home() {
                   </svg>
                 </Link>
                 <Link
-                  href="tel:1800SOHOTRANS"
+                  href="tel:7042225288"
                   className="px-6 sm:px-8 py-3.5 sm:py-4 bg-white/10 backdrop-blur-sm border border-white/30 text-white font-semibold rounded-xl hover:bg-white/20 transition-all inline-flex items-center justify-center gap-2 text-sm sm:text-base"
                 >
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

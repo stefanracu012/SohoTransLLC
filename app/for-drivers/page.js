@@ -270,10 +270,10 @@ export default function ForDriversPage() {
               Apply Now
             </Link>
             <a
-              href="tel:5551234567"
-              className="px-8 py-4 bg-transparent border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-[#DC2626] transition-colors text-lg"
+              href="tel:7042225288"
+              className="inline-flex items-center px-8 py-4 bg-transparent border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-[#1F2937] transition-colors text-lg"
             >
-              Call (555) 123-4567
+              Call (704) 222-5288
             </a>
           </div>
         </div>
