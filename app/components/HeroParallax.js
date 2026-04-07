@@ -39,8 +39,8 @@ export default function HeroParallax() {
       </div>
 
       {/* Gradient Overlays */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/80 z-10"></div>
-      <div className="absolute inset-0 bg-gradient-to-r from-[#DC2626]/30 via-transparent to-transparent z-10"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/60 lg:from-black/70 lg:via-black/50 lg:to-black/80 z-10"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-[#DC2626]/10 via-transparent to-transparent lg:from-[#DC2626]/30 z-10"></div>
 
       {/* Grid Pattern */}
       <div className="absolute inset-0 z-10 opacity-10">
